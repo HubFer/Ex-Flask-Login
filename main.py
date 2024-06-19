@@ -59,7 +59,7 @@ def register():
             password=hashed_pass,
             name=request.form.get('name')
         )
-        # DB:
+        # DB: OK
         try:
             db.session.add(new_user)
             db.session.commit()
